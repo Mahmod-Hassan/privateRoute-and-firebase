@@ -1,14 +1,16 @@
+import { Toaster } from "react-hot-toast";
 import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
 import Dashboard from "./components/Dashboard";
+import Home from "./components/Home";
 import Login from "./components/Login";
-import SignUp from "./components/SignUp";
+import Navbar from "./components/Navbar";
 import PrivateRoute from "./components/PrivateRoute";
+import SignUp from "./components/SignUp";
 
 function App() {
   return (
     <div className="">
+      <Toaster></Toaster>
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
